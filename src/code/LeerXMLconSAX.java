@@ -16,7 +16,7 @@ public class LeerXMLconSAX {
     public static void leerXML(){
         Path p = Path.of("src/resources/concesionario3.xml");
         ArrayList<Coche> cochesXML = new ArrayList<Coche>();
-        if (Files.isReadable(p)){
+        if (Files.isReadable(p)){//
             SAXParserFactory saxPF=SAXParserFactory.newInstance();
             CocheHandlerClase cocheHandler = new CocheHandlerClase();
             try {
