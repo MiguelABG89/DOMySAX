@@ -19,7 +19,7 @@ public class LeerXMLconSAX {
         if (Files.isReadable(p)){//
             SAXParserFactory saxPF=SAXParserFactory.newInstance();
             CocheHandlerClase cocheHandler = new CocheHandlerClase();
-            try {
+            try {//
                 SAXParser parser = saxPF.newSAXParser();
                 parser.parse(p.toFile(),cocheHandler);
                 cochesXML=cocheHandler.getCoches();
